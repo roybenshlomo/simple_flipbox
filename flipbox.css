@@ -1,0 +1,77 @@
+.cards-row {
+  width: 1200px;
+  height: 300px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    padding-top: 30px;
+    padding-left: 30px;
+    display:inline-block;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    background-color:white;
+    color: black;  
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+  .front-card-icon {
+      padding-top: 40px;
+      height: 140px;
+      width: 140px;
+      margin: auto;
+  }
+
+  .front-card-text .back-card-title .back-card-text {
+    text-align: center;
+    color: black;
+  }
+
+  .front-card-text {
+      padding-top: 10px;
+      font-size: 36pt;
+      font-weight: bold;
+  }
+
+  .back-card-title {
+      padding-top: 30px;
+      font-size: 24pt;
+      font-weight: bold;
+  }
+
+  .back-card-text {
+      font-size: 14pt;
+      padding-top: 10px;
+      margin-left: 30px;
+      margin-right: 30px;
+      /* Remove this if you are not Israeli or arab
+         and don't need your text to be reversed to
+         what the rest of the world is */
+      direction: rtl;
+  }
