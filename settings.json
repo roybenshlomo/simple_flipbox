@@ -1,5 +1,4 @@
 {
-    "number-of-cards" : 5,
     "cards-per-row" : 3,
     "row-height" : 300,
     "card-height" : 300,

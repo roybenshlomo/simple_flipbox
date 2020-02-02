@@ -1,6 +1,9 @@
 .cards-row {
   width: %row-width%px;
   height: %row-height%px;
+  padding-top: 30px;
+  margin: auto;
+  text-align: center;
 }
 
 .flip-card {
@@ -70,8 +73,5 @@
       padding-top: 10px;
       margin-left: 30px;
       margin-right: 30px;
-      /* Remove this if you are not Israeli or arab
-         and don't need your text to be reversed to
-         what the rest of the world is */
       direction: %direction%;
   }
