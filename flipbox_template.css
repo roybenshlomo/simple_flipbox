@@ -1,12 +1,12 @@
 .cards-row {
-  width: 1200px;
-  height: 300px;
+  width: %row-width%px;
+  height: %row-height%px;
 }
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: %card-width%px;
+    height: %card-height%px;
     perspective: 1000px;
     padding-top: 30px;
     padding-left: 30px;
@@ -43,8 +43,8 @@
 
   .front-card-icon {
       padding-top: 40px;
-      height: 140px;
-      width: 140px;
+      height: %icon-height%px;
+      width: %icon-width%px;
       margin: auto;
   }
 
@@ -55,23 +55,23 @@
 
   .front-card-text {
       padding-top: 10px;
-      font-size: 36pt;
+      font-size: %front-font-size%pt;
       font-weight: bold;
   }
 
   .back-card-title {
       padding-top: 30px;
-      font-size: 24pt;
+      font-size: %back-title-font-size%pt;
       font-weight: bold;
   }
 
   .back-card-text {
-      font-size: 14pt;
+      font-size: %back-text-font-size%pt;
       padding-top: 10px;
       margin-left: 30px;
       margin-right: 30px;
       /* Remove this if you are not Israeli or arab
          and don't need your text to be reversed to
          what the rest of the world is */
-      direction: rtl;
+      direction: %direction%;
   }
