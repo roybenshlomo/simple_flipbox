@@ -1,0 +1,13 @@
+{
+    "number-of-cards" : 5,
+    "cards-per-row" : 3,
+    "row-height" : 300,
+    "card-height" : 300,
+    "card-width" : 300,
+    "icon-height": 140,
+    "icon-width" : 140,
+    "front-font-size": 36,
+    "back-title-font-size" : 24,
+    "back-text-font-size": 14,
+    "direction" : "rtl"
+}
